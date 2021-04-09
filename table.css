@@ -1,0 +1,33 @@
+.table {
+    width: 100%;
+}
+
+.table .table-head .table-col {
+    font-weight: bold;
+}
+
+.table .table-head, .table .table-body {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 42px);
+}
+
+.table .table-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32px, 1fr));
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: black;
+    transition: background-color 3s;
+}
+
+.table .table-row:hover {
+    background-color: #ff9ff3;
+    cursor: pointer;
+    transition: background-color .5s;
+}
+
+.table .table-row .table-col {
+    display: grid;
+    align-items: center;
+    height: 42px;
+}
